@@ -16,6 +16,8 @@
     "selenium-webdriver": "2.44.0",
     "minijasminenode": "1.1.1",
     "jasminewd": "1.1.0",
+    "jasminewd2": "0.0.2",
+    "jasmine": "2.1.1",
     "saucelabs": "~0.1.0",
     "glob": "~3.2",
     "adm-zip": "0.4.4",
@@ -47,9 +49,9 @@
   "main": "lib/protractor.js",
   "scripts": {
     "pretest": "node_modules/.bin/jshint lib spec scripts",
-    "test": "scripts/test.js",
-    "start": "testapp/scripts/web-server.js"
+    "test": "node scripts/test.js",
+    "start": "node testapp/scripts/web-server.js"
   },
   "license": "MIT",
-  "version": "1.5.0"
+  "version": "1.6.1"
 }

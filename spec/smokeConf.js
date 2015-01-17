@@ -6,6 +6,8 @@ exports.config = {
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey: process.env.SAUCE_ACCESS_KEY,
 
+  framework: 'jasmine2',
+
   specs: [
     'basic/locators_spec.js',
     'basic/mockmodule_spec.js',
@@ -19,7 +21,7 @@ exports.config = {
     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
     'build': process.env.TRAVIS_BUILD_NUMBER,
     'name': 'Protractor smoke tests',
-    'version': '37',
+    'version': '38',
     'selenium-version': '2.43.1',
     'platform': 'OS X 10.9'
   }, {
@@ -27,7 +29,7 @@ exports.config = {
     'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
     'build': process.env.TRAVIS_BUILD_NUMBER,
     'name': 'Protractor smoke tests',
-    'version': '32',
+    'version': '33',
     'selenium-version': '2.43.1'
   }, {
     'browserName': 'safari',
